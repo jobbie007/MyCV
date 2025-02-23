@@ -21,7 +21,12 @@ body {
  z-index:+5;  
  }
  
- 
+ .col-sm-3 {
+  display: flex;
+  align-items: center;     /* Centers vertically */
+  height: 90%;            /* Ensure the div has a defined height */
+}
+
  .jumbo-background{
    background-color: #232;
    color:#fff;
@@ -31,7 +36,7 @@ body {
    
  }
  .profile-img{
-   margin-top: 30px;
+   margin-top: 45px;
  
  }
  
