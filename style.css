@@ -141,7 +141,7 @@ a:hover {
     box-shadow: 0 0 20px var(--dm-hover-glow);
 
     opacity: 0; /* Initially hidden */
-    transition: opacity 2.8s ease-in-out;
+    transition: opacity 1.8s ease-in-out;
 }
 
 .profile-picture.loaded {
