@@ -1,185 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N16NE5MEZ8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N16NE5MEZ8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-N16NE5MEZ8');
-</script>
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+      gtag('config', 'G-N16NE5MEZ8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Ko - CS CV (Dark Mode, Animated BG, Circular Scroll Top Button)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
-  
-  <body>
-  
-  <div class="container" >
-    <div id="topheader">
-    <nav class="navbar navbar-inverse" id="home">
-        <div class="navbar-header">
-          
-   
-          <ul class="nav navbar-nav">
-            <li ><a href="#profile">Profile</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skill">Skill</a></li>
-           
-            <li><a href="#project">Project</a></li>
-            
-          </ul>
-       </div> 
-    </nav>
-    </div>  
-     <div class="jumbo-background" id="profile">
-    
-       <div class="row">
-        <div class="col-sm-9">
-          <div class="intro-text">
-            <h1>Profile</h1>
-      <hr class="star-bright">
-            <h3>
-              Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job<br>
-              Surname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ko <br>
-              Date&nbsp;of&nbsp;Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;January 18 2004 <br>
-              Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Male <br>
-              Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jobtyko@gmail.com <br>
-              Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+27784687585 <br>
-    
-    
-            </h3> 
-            <hr class="star-bright">
-            <span class="skill "><a href="https://github.com/jobbie007" target="_blank"><button type="button" class="btn btn-git col-sm-4"><i aria-hidden="true"></i> Github</button></a>
-              
-    
-  <a href="https://www.linkedin.com/in/job-ko-19078b351/" target="_blank"><button type="button" class="btn btn-linkedin col-sm-4"><i  aria-hidden="true"></i> Linkedin</button></a>            
-              
-  </span>
-          </div>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+
+    <header id="hero">
+        <div class="hero-content">
+            <div class="profile-picture-container">
+                <img src="https://www.dropbox.com/scl/fi/1vldk9t17tcg7bdvtqthc/Final-min.jpg?rlkey=856yh0ferbzkvd24m68ouck0u&st=2vzrvub2&raw=1" alt="Job Ko" class="profile-picture">
+            </div>
+            <h1>Job Ko</h1>
+            <p>Passionate Problem Solver | IT Professional | Aspiring Developer & AI Enthusiast</p>
+            <div class="hero-social-links">
+                <a href="https://www.linkedin.com/in/job-ko-19078b351/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/jobbie007" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <div class="col-sm-3">
-          <img src="https://www.dropbox.com/scl/fi/wd4urvj569ykjlr7xkfr0/Final.jpg?rlkey=9nb8k8vj9b95e00b2ttv18ycg&st=3u4e12lw&raw=1" class="img-responsive img-fluid mx-auto img-rectangle profile-img" alt="Profile">  
-        </div>
-      </div>
-    </div>
-    
-    <div class="jumbo-background" id="about">
-      <h1>About</h1>
-      <hr class='star-bright'>
-      <p>I'm a passionate problem solver who thrives on challenges and continuous learning. I see every obstacle as an opportunity for growth, pushing myself beyond my limits to break mental barriers. Adaptability is key to my journey. Change is only direction, not destination. My goal is to keep evolving, embracing new knowledge, and turning challenges into stepping stones for success.   </p>
-    </div>
-    
-    
-   <div class="jumbo-background" id="experience">
-      <h1>Experience</h1>
-      <hr class="star-bright">
-     
-      <h3 id="workTitle"><strong>Retail Manager and IT Technician</strong></h3>
-      <h4 id="workTitle">China Mall <br>Jan 2023 - 2024</h4>      
-      <p>
-      China Mall is a large retail center offering a variety of consumer goods at wholesale prices. The store serves a high volume of customers daily, requiring efficient management, product organization, and technical support to maintain smooth operations.
-      <br><br>
-      There are 3 roles that I have undertaken in this company:
-      <br><br>      
-      <strong>1. Cashier and Product Manager</strong><br>
-      As a cashier, my responsibilities include handling transactions, providing customer service, and managing the Point of Sale (POS) system efficiently. Additionally, I oversee product management, ensuring that inventory is well-stocked, organized, and displayed in a way that maximizes sales and customer satisfaction.
-      <br><br>
-      <strong>2. Workforce Supervisor</strong><br>
-      In my role as a workforce supervisor, I manage store employees by assigning tasks, optimizing workflows, and ensuring a productive and organized work environment. My focus is on improving efficiency, reducing errors, and ensuring smooth store operations during peak hours.
-      <br><br>
-      <strong>3. IT & Networking Technician</strong><br>
-      I am responsible for setting up and maintaining security cameras, installing and managing network cables, and troubleshooting hardware and software issues within the store. I ensure that surveillance systems operate effectively and that the network infrastructure supports business operations without downtime.
-      </p>
-   <br>      
-    </div>
-    <div class="jumbo-background" id="education">
-    <h1>Education</h1>
-      <hr class="star-bright">
-      <h3 id="workTitle"><Strong>freeCodeCamp</strong></h3>
-     <h4 id="workTitle">2020</h4>      
-      <p>Front End Development Course</p>
-    <br>
-      <h3 id="workTitle"><Strong>Codecademy</strong></h3>
-     <h4 id="workTitle">2020</h4>      
-      <p>Javascript Course</p>
-      <br>
-      <h3 id="workTitle"><Strong>University of Kwazulu-Natal</strong></h3>
-     <h4 id="workTitle">2022-2025</h4>      
-      <p>Bachelor of Science in Computer Science and Information Technology</p> 
-    </div>
-    
-    
-    <div class="jumbo-background" id="skill">
-      <h1>Skill</h1>
-      <hr class="star-bright">
-      <h3>Hard Skill</h3>
-      
-      <ol >
-        <li>Programming Languages: Python, Java, C++, JavaScript</li>
-        <li>Web Development: HTML, CSS, React, Node.js</li>
-        <li>Database Management: MySQL, MongoDB, Firebase</li>
-        <li>Networking & Security: Network Setup, CCTV Installation, Cybersecurity Basics</li>
-        <li>Cloud Computing: AWS, Google Cloud Platform</li>
-        <li>AI & Machine Learning: NLP, Data Processing</li>
-        <li>Software Development: Git, Agile Methodologies</li>
-        <li>Spreadsheet & Automation: Google Sheets, Excel</li>
-        <li>Typing Speed & Data Entry: 100+ Words per minute with high accuracy</li>
-      </ol>
-      <h3>Soft Skill</h3>
-      <ol  id="list">
-        <li>Strong teamwork and independent problem-solving abilities</li>
-        <li>Ability to work efficiently under pressure</li>
-        <li>Excellent interpersonal and communication skills</li>
-        <li>Effective presentation and public speaking skills</li>
-        <li>Leadership and team management experience</li>
-        <li>Critical thinking and analytical reasoning</li>
-        <li>Adaptability and quick learning</li>
-      </ol>
-      
-    </div>
-    
-    
-    <div class="jumbo-background" id="project">
-        <h1>Project</h1>
-        <hr class="star-bright">
-        <h3 id="workTitle"><strong>Quick AI Chrome Extension</strong></h3>
-<h4 id="workDate">2025</h4>      
-<p>
-    A powerful and lightweight Chrome extension that brings AI-powered conversations directly to your browser.  
-    This tool allows users to ask <strong>natural language questions</strong> and receive intelligent responses using the <strong>Gemini API</strong>—all without leaving the current tab.  
-</p>
+    </header>
 
-<ul>
-    <li>🔹 <strong>Seamless Integration</strong> – Works effortlessly within the Chrome browser.</li>
-    <li>⚡ <strong>Instant AI Responses</strong> – Get fast, accurate answers to your queries.</li>
-    <li>🛠️ <strong>Built with Modern Technologies</strong> – Developed using <strong>JavaScript, HTML, CSS, and the Chrome Extensions API</strong>.</li>
-    <li>🔑 <strong>Uses Gemini AI</strong> – Leverages Google's <strong>Gemini API</strong> for intelligent responses.</li>
-</ul>
+    <main>
+        <section id="about" class="cv-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate problem solver who thrives on challenges and continuous learning. I see every obstacle as an opportunity for growth, pushing myself beyond my limits to break mental barriers. Adaptability is key to my journey. Change is only direction, not destination. My goal is to keep evolving, embracing new knowledge, and turning challenges into stepping stones for success.</p>
+        </section>
 
-<p>Whether you need quick answers, explanations, or AI-assisted brainstorming, this extension enhances productivity with AI at your fingertips.</p>
+        <section id="skills" class="cv-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">Firebase</div>
+                <div class="skill-item">Networking</div>
+                <div class="skill-item">CCTV Install</div>
+                <div class="skill-item">Cybersecurity</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Google Cloud</div>
+                <div class="skill-item">NLP</div>
+                <div class="skill-item">Data Processing</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Agile</div>
+                <div class="skill-item">Excel/Sheets</div>
+                <div class="skill-item">Typing (100+WPM)</div>
+            </div>
+        </section>
 
-        <a id ="projectlink" href=https://github.com/jobbie007/Quick-AI> See Project Here </a>
-        
-       <br>
-           
-    <footer class="container-fluid text-center">
-      <a href="#topheader" title="To Top">
-        <i class="fa fa-arrow-circle-up   fa-5x" aria-hidden="true"></i>
-      </a><br />
-      
-   
+        <section id="projects" class="cv-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card"> <!-- Boss Fight Game Second -->
+                    <h3>Boss Fight Game (C++/SFML)</h3>
+                    <p>A 2D side-scrolling boss fight game developed using C++ and SFML. The player controls a hero character who must defeat a formidable boss in a demonic arena. The game features dynamic animations, multiple attack types for both player and boss, projectile systems, and a clear UI.</p>
+                    <h4><i class="fas fa-star"></i> Key Features:</h4>
+                    <ul>
+                        <li><strong>Player:</strong> Walk, Jump, Melee Combo, Ranged Attack, Parry, Dash with invincibility.</li>
+                        <li><strong>Boss:</strong> Complex AI with diverse attack patterns (melee, projectiles, ultimate).</li>
+                        <li><strong>Gameplay:</strong> Collision detection, Parry mechanic, Dynamic background, UI (health bars, timer, tutorial, end screens).</li>
+                    </ul>
+                    <!-- Image directly in the card, visible initially -->
+                    <div class="project-image-main">
+                        <img src="https://private-user-images.githubusercontent.com/78665256/439860274-0d38e44d-f818-45e1-bb3c-2e94572a7cff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc3NjAzMjYsIm5iZiI6MTc0Nzc2MDAyNiwicGF0aCI6Ii83ODY2NTI1Ni80Mzk4NjAyNzQtMGQzOGU0NGQtZjgxOC00NWUxLWJiM2MtMmU5NDU3MmE3Y2ZmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTIwVDE2NTM0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM4NGIxNjYyNGI0Y2UyNTg3NDNmYzk5YmU3NzQxY2E0ZjQ1YTk0MTQzNmNmZjE0ZTI1Y2Q4Yjg3MWY4MDE4MGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XiJQac6-LWhXpI7iQ9e4K1yY53IwEQxcQUIQAQ9fVyg" alt="Boss Fight Game Screenshot">
+                    </div>
+
+                    <button class="project-toggle-details project-link">View more ⏬</button>
+
+                    <div class="project-details-more">
+                        <h5><i class="fas fa-photo-video"></i> Video & Code</h5>
+                        <div class="project-video-container">
+                            <video controls width="100%" preload="metadata">
+                                <source src="https://github.com/user-attachments/assets/e42ca927-802f-4956-a6c3-186d0feead24" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-external-links">
+                            <a href="https://github.com/jobbie007/BossFight" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"> <!-- Typing Game Project -->
+                    <h3>Typing Game (SFML 2.6.2)</h3>
+                    <p>Words appear on the screen, and your goal is to type them before the grid fills up. As time progresses, more words appear, increasing the challenge. The game ends when all nine grid squares are occupied.</p>
+                    <h4><i class="fas fa-star"></i> Features:</h4>
+                    <ul>
+                        <li>Dynamic word generation that increases in difficulty over time.</li>
+                        <li>Real-time typing input with immediate feedback.</li>
+                        <li>Score tracking based on words correctly typed.</li>
+                    </ul>
+                    <!-- No initially visible image here, will be in collapsible section -->
+                    <button class="project-toggle-details project-link">View more ⏬</button>
+                    <div class="project-details-more">
+                        <div class="project-images"> 
+                             <img src="https://github.com/user-attachments/assets/359e877e-09ae-42cf-b15a-eae4c5c01c8b" alt="Typing Game Screenshot">
+                        </div>
+                        <div class="project-external-links">
+                            <a href="https://github.com/jobbie007/Typing-game-in-sfml-2.6.2" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="project-card"> <!-- Quick AI Project Last -->
+                    <h3>Quick AI Chrome Extension (2025)</h3>
+                    <p>A powerful and lightweight Chrome extension that brings AI-powered conversations directly to your browser. This tool allows users to ask natural language questions and receive intelligent responses using the Gemini API—all without leaving the current tab.</p>
+                    <ul>
+                        <li>Seamless Integration & Instant AI Responses.</li>
+                        <li>Built with JavaScript, HTML, CSS, and Chrome Extensions API.</li>
+                        <li>Leverages Google's Gemini API for intelligence.</li>
+                    </ul>
+                    <p>Enhances productivity with AI at your fingertips for quick answers, explanations, or brainstorming.</p>
+                    <a href="https://github.com/jobbie007/Quick-AI" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Code on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="cv-section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Retail Manager and IT Technician | China Mall</h3>
+                <p class="experience-date">Jan 2023 - 2024</p>
+                <p>China Mall is a large retail center offering a variety of consumer goods at wholesale prices. The store serves a high volume of customers daily, requiring efficient management, product organization, and technical support to maintain smooth operations.</p>
+                <p>Roles undertaken:</p>
+                <h4>1. Cashier and Product Manager</h4>
+                <ul>
+                    <li>Handled transactions, provided customer service, and managed the Point of Sale (POS) system efficiently.</li>
+                    <li>Oversaw product management, ensuring inventory was well-stocked, organized, and displayed to maximize sales and customer satisfaction.</li>
+                </ul>
+                <h4>2. Workforce Supervisor</h4>
+                <ul>
+                    <li>Managed store employees by assigning tasks, optimizing workflows, and ensuring a productive and organized work environment.</li>
+                    <li>Focused on improving efficiency, reducing errors, and ensuring smooth store operations during peak hours.</li>
+                </ul>
+                <h4>3. IT & Networking Technician</h4>
+                <ul>
+                    <li>Responsible for setting up and maintaining security cameras.</li>
+                    <li>Installed and managed network cables.</li>
+                    <li>Troubleshot hardware and software issues within the store, ensuring surveillance systems operated effectively and network infrastructure supported business operations without downtime.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="cv-section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Computer Science and Information Technology | University of Kwazulu-Natal</h3>
+                <p class="education-date">2022 - 2025 (Expected)</p>
+            </div>
+            <div class="education-item">
+                <h3>Front End Development Course | freeCodeCamp</h3>
+                <p class="education-date">2020</p>
+            </div>
+            <div class="education-item">
+                <h3>Javascript Course | Codecademy</h3>
+                <p class="education-date">2020</p>
+            </div>
+        </section>
+
+        <section id="contact" class="cv-section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:jobtyko@gmail.com">jobtyko@gmail.com</a></p>
+            <p>Phone: +27784687585</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/job-ko-19078b351/" target="_blank">linkedin.com/in/job-ko-19078b351</a></p>
+            <p>GitHub: <a href="https://github.com/jobbie007" target="_blank">github.com/jobbie007</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Job Ko. Designed with a touch of animation.</p>
     </footer>
-    
-   </div> 
-   <script src="script.js" type="text/javascript" defer></script>
-   <canvas id="c"></canvas>
-  </body>  
+
+    <a href="#hero" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
 </html>
