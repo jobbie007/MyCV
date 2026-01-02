@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N16NE5MEZ8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N16NE5MEZ8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Ko | Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+    
+    <!-- Theme Transition Overlay -->
+    <div class="theme-transition-overlay"></div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">JK.</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <!-- Animated SVG Line Drawing -->
+                    <svg class="svg-frame" viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--neon-pink)"/>
+                                <stop offset="50%" stop-color="var(--neon-purple)"/>
+                                <stop offset="100%" stop-color="var(--neon-blue)"/>
+                            </linearGradient>
+                        </defs>
+                        <circle class="svg-circle" cx="100" cy="100" r="95" fill="none" stroke="url(#frameGradient)" stroke-width="2"/>
+                        <circle class="svg-circle-inner" cx="100" cy="100" r="88" fill="none" stroke="url(#frameGradient)" stroke-width="1" stroke-dasharray="10 5"/>
+                    </svg>
+                    <div class="profile-ring"></div>
+                    <img src="https://www.dropbox.com/scl/fi/1vldk9t17tcg7bdvtqthc/Final-min.jpg?rlkey=856yh0ferbzkvd24m68ouck0u&st=2vzrvub2&raw=1" alt="Job Ko" class="profile-picture">
+                </div>
+                <h1 class="fade-up">Job Ko</h1>
+                <h2 class="subtitle fade-up stagger-1">Software Developer <span class="highlight">&</span> Problem Solver</h2>
+                <p class="bio fade-up stagger-2">
+                    I enjoy building efficient software and finding ways to make things run faster. Always learning, always optimizing.
+                </p>
+                <div class="social-links fade-up stagger-3">
+                    <a href="https://www.linkedin.com/in/job-ko-19078b351/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/jobbie007" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jobtyko@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">01</span> About Me</h3>
+            </div>
+            <div class="section-content fade-up stagger-1">
+                <p>
+                    I'm a developer with a focus on performance and clean code. My projects range from game engines in C++/SFML with custom shaders, to full-stack web apps with React and Python. I enjoy tackling optimization challengesâ€”whether it's improving load times, building efficient data pipelines, or even hands-on work like setting up solar systems and home automation. I'm always looking for ways to learn and improve.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">02</span> Selected Projects</h3>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Solar Energy Analytics & Automation - FEATURED EXPANDABLE -->
+                <article class="project-card featured fade-up" data-expandable>
+                    <div class="project-image-container">
+                        <img src="images/solar/panels.jpeg" alt="Solar Energy System" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-solar-panel"></i></div>
+                            <div class="project-links">
+                                <a href="#" aria-label="Private Project"><i class="fas fa-lock"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Solar Energy System & Home Automation</h4>
+                        <p>Designed and installed a complete off-grid solar system from the ground upâ€”wiring DB boards, running AC/DC cabling, mounting panels, and configuring Victron inverters and battery banks. Built custom Python/Node-RED dashboards for real-time monitoring, predictive battery optimization using weather APIs, and automated geyser control via Sonoff switches to minimize loadshedding impact.</p>
+                        <ul class="project-tech-list">
+                            <li>Electrical Wiring</li>
+                            <li>DB Board Installation</li>
+                            <li>Victron/Sonoff IoT</li>
+                            <li>Python/Node-RED</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Hardware & Installation</h5>
+                            <ul>
+                                <li><strong>DB board wiring</strong> with proper circuit breakers & surge protection</li>
+                                <li><strong>AC/DC cable runs</strong> for solar panels to inverter to batteries</li>
+                                <li><strong>Victron Quattro inverter</strong> configuration & commissioning</li>
+                                <li><strong>Lithium battery bank</strong> setup with BMS integration</li>
+                                <li><strong>Solar panel mounting</strong> with optimal angle calculations</li>
+                                <li><strong>Sonoff smart switches</strong> for geyser & pool pump automation</li>
+                            </ul>
+                            <h5 style="margin-top: 1.5rem;">Software & Automation</h5>
+                            <ul>
+                                <li><strong>Node-RED flows</strong> for real-time monitoring dashboard</li>
+                                <li><strong>Weather API integration</strong> for predictive battery management</li>
+                                <li><strong>Loadshedding schedule sync</strong> to pre-charge batteries</li>
+                                <li><strong>Automated geyser control</strong> based on solar excess</li>
+                                <li><strong>Historical data logging</strong> & energy analytics</li>
+                                <li><strong>Mobile alerts</strong> for system faults & low battery</li>
+                            </ul>
+                            <div class="expanded-media">
+                                <div class="media-item">
+                                    <img src="images/solar/Complete.jpeg" alt="Complete Solar Installation">
+                                    <p class="media-caption">Complete Installation</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="images/solar/wiring.jpg" alt="Inverter Wiring">
+                                    <p class="media-caption">Inverter & MPPT Wiring</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="images/solar/DB wiring.jpeg" alt="DB Board Wiring">
+                                    <p class="media-caption">DB Board Wiring</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="images/solar/panels.jpeg" alt="Solar Panels">
+                                    <p class="media-caption">Roof-mounted Panels</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Trading Analysis AI - EXPANDABLE -->
+                <article class="project-card fade-up stagger-1" data-expandable>
+                    <div class="project-image-container">
+                        <img src="https://private-user-images.githubusercontent.com/78665256/493548861-e6b8fc9d-1c71-4992-8b8f-9222b5582734.png" alt="Trading Analysis AI Dashboard" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/Trading-analysis-AI-" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="https://trading-analysis-ai.onrender.com/" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Trading Analysis AI</h4>
+                        <p>A comprehensive financial intelligence dashboard featuring real-time TradingView charts, news analysis, and wallet strategy tools. Integrates OpenAI/Gemini for AI-driven market insights.</p>
+                        <ul class="project-tech-list">
+                            <li>Python/Dash</li>
+                            <li>OpenAI/Gemini</li>
+                            <li>Blockchair API</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Key Features</h5>
+                            <ul>
+                                <li>Real-time TradingView chart integration</li>
+                                <li>AI-powered market sentiment analysis</li>
+                                <li>Multi-wallet portfolio tracking</li>
+                                <li>News aggregation with AI summaries</li>
+                                <li>Custom trading strategy backtesting</li>
+                            </ul>
+                            <a href="https://trading-analysis-ai.onrender.com/" target="_blank" class="expanded-link">
+                                <i class="fas fa-external-link-alt"></i> Try Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Boss Fight Game - EXPANDABLE -->
+                <article class="project-card fade-up stagger-2" data-expandable>
+                    <div class="project-image-container">
+                        <video class="project-image" autoplay loop muted playsinline>
+                            <source src="https://github.com/user-attachments/assets/0d38e44d-f818-45e1-bb3c-2e94572a7cff" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-gamepad"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/BossFight" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Boss Fight Game</h4>
+                        <p>Developed a comprehensive 2D side-scrolling game featuring a hero with multiple abilities and a complex AI boss. Implemented dynamic animations, projectile systems, collision detection, and UI elements.</p>
+                        <ul class="project-tech-list">
+                            <li>C++</li>
+                            <li>SFML</li>
+                            <li>Game AI</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Key Features</h5>
+                            <ul>
+                                <li>Multi-phase boss with adaptive AI behavior</li>
+                                <li>Player abilities: dash, double jump, ranged & melee attacks</li>
+                                <li>Custom sprite animations with state machines</li>
+                                <li>Particle effects and screen shake feedback</li>
+                            </ul>
+                            <div class="expanded-media">
+                                <img src="images/projects/boss-fight.gif" alt="Boss Fight Gameplay">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: 3D Marble Adventure - EXPANDABLE -->
+                <article class="project-card fade-up stagger-3" data-expandable>
+                    <div class="project-image-container">
+                        <img src="Marble game Presentation/307 vids/Level 3 demo.gif" alt="Marble Game Demo" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-cube"></i></div>
+                            <div class="project-links">
+                                <a href="Marble game Presentation/projectpresentation.html" target="_blank" aria-label="View Presentation"><i class="fas fa-external-link-alt"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>3D Marble Adventure</h4>
+                        <p>A physics-based 3D/2D marble platformer with two unique levels, featuring procedural generation, custom HLSL shaders, predictive AI, and a dynamic camera system.</p>
+                        <ul class="project-tech-list">
+                            <li>Unity/C#</li>
+                            <li>Custom Shaders</li>
+                            <li>Physics AI</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Technical Highlights</h5>
+                            <ul>
+                                <li><strong>Dual-axis camera system</strong> with physics-based banking & tilt</li>
+                                <li><strong>Predictive tank AI</strong> that leads shots based on player velocity</li>
+                                <li><strong>Procedural level generation</strong> for infinite 2D platforming</li>
+                                <li><strong>Custom HLSL shaders</strong>: Toon shading, skybox sunset, animated laser</li>
+                                <li><strong>Star rating system</strong> (1-3 stars based on coins & time)</li>
+                                <li><strong>Sprint & dash mechanics</strong> with speed boost panels</li>
+                                <li><strong>Checkpoint timer system</strong> with per-segment time limits</li>
+                                <li><strong>Custom NPC rig</strong> built from scratch in Blender</li>
+                            </ul>
+                            <div class="expanded-media">
+                                <div class="media-item">
+                                    <img src="Marble game Presentation/307 vids/Camera banking tilt.gif" alt="Dynamic Camera Tilt">
+                                    <p class="media-caption">Physics-based camera banking</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="Marble game Presentation/307 vids/turrent predictive shooting.gif" alt="Predictive AI Shooting">
+                                    <p class="media-caption">Predictive tank AI targeting</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="Marble game Presentation/307 vids/Bumper interaction.gif" alt="Bumper Physics">
+                                    <p class="media-caption">Bumper interaction physics</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="Marble game Presentation/307 vids/Predictive laser.gif" alt="Laser Shader">
+                                    <p class="media-caption">Custom animated laser shader</p>
+                                </div>
+                            </div>
+                            <a href="Marble game Presentation/projectpresentation.html" target="_blank" class="expanded-link" style="margin-top: 1.5rem;">
+                                <i class="fas fa-external-link-alt"></i> View Full Presentation
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Bank Statement Converter - EXPANDABLE -->
+                <article class="project-card fade-up stagger-4" data-expandable>
+                    <div class="project-image-container">
+                        <img src="https://private-user-images.githubusercontent.com/78665256/456730984-8bf75edb-850e-443b-a482-e92405d5aafd.png" alt="Bank Statement Converter Interface" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/Absa-Bank-Statement-Converter" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="https://absa-bank-statement-converter-cheque.onrender.com/" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Bank Statement Converter</h4>
+                        <p>Automates the processing of PDF bank statements into categorized Excel data. Features intelligent transaction categorization, interactive visualization, and smart rule learning.</p>
+                        <ul class="project-tech-list">
+                            <li>Python/Flask</li>
+                            <li>PDF Parsing</li>
+                            <li>Data Viz</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Key Features</h5>
+                            <ul>
+                                <li>PDF parsing with intelligent text extraction</li>
+                                <li>Auto-categorization of transactions (groceries, fuel, etc.)</li>
+                                <li>Interactive pie charts & spending breakdowns</li>
+                                <li>Export to Excel with formatted sheets</li>
+                                <li>Rule learning for custom categories</li>
+                            </ul>
+                            <a href="https://absa-bank-statement-converter-cheque.onrender.com/" target="_blank" class="expanded-link">
+                                <i class="fas fa-external-link-alt"></i> Try Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Quick AI Chrome Extension -->
+                <article class="project-card fade-up stagger-5">
+                    <div class="project-image-container">
+                        <img src="https://raw.githubusercontent.com/jobbie007/Quick-AI/main/icon.png" alt="Quick AI Icon" class="project-image" style="object-fit: contain; padding: 20px; background: linear-gradient(135deg, #1a1a2e, #16213e);">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-robot"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/Quick-AI" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>Quick AI Chrome Extension</h4>
+                        <p>Created a lightweight Chrome extension integrating Google's Gemini API for in-browser AI chat. Allows users to quickly access AI assistance without leaving their current tab.</p>
+                        <ul class="project-tech-list">
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Gemini API</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Project 7: Visual Novel Quiz Game - EXPANDABLE -->
+                <article class="project-card fade-up stagger-6" data-expandable>
+                    <div class="project-image-container">
+                        <img src="images/projects/visual-novel-1.png" alt="Visual Novel Quiz Game" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/VisualNovelQuizGame" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Visual Novel Quiz Game Engine</h4>
+                        <p>Developed a C++/SFML game engine with an image caching system that slashed asset loading time by 80%. Features JSON-driven dynamic narratives, mini-games, and complex 2D boss fight logic.</p>
+                        <ul class="project-tech-list">
+                            <li>C++</li>
+                            <li>SFML</li>
+                            <li>JSON Parsing</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Engine Features</h5>
+                            <ul>
+                                <li><strong>Image caching system</strong> with 80% faster asset loading</li>
+                                <li><strong>JSON-driven narrative</strong> for dynamic story branching</li>
+                                <li><strong>Integrated mini-games</strong> within the visual novel</li>
+                                <li><strong>Complex boss fight logic</strong> with state machines</li>
+                                <li><strong>Custom rendering pipeline</strong> for smooth animations</li>
+                                <li><strong>Event-driven architecture</strong> for game flow control</li>
+                            </ul>
+                            <div class="expanded-media">
+                                <div class="media-item">
+                                    <img src="images/projects/visual-novel-1.png" alt="Visual Novel Gameplay">
+                                    <p class="media-caption">Visual Novel Dialogue System</p>
+                                </div>
+                                <div class="media-item">
+                                    <img src="images/projects/visual-novel-2.png" alt="Boss Fight Scene">
+                                    <p class="media-caption">Integrated Boss Fight</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8: Typing Game - EXPANDABLE -->
+                <article class="project-card fade-up" data-expandable>
+                    <div class="project-image-container">
+                        <img src="images/projects/typing-game.gif" alt="Typing Game Demo" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="fas fa-keyboard"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/jobbie007/Typing-game-in-sfml-2.6.2" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <button class="expand-btn" aria-label="Expand"><i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <h4>Typing Speed Game</h4>
+                        <p>A fast-paced typing game built with C++ and SFML featuring dynamic word generation, real-time WPM tracking, and progressively increasing difficulty to improve typing skills.</p>
+                        <ul class="project-tech-list">
+                            <li>C++</li>
+                            <li>SFML 2.6.2</li>
+                            <li>Game Logic</li>
+                        </ul>
+                    </div>
+                    <!-- Expanded Content -->
+                    <div class="project-expanded">
+                        <div class="expanded-content">
+                            <h5>Game Features</h5>
+                            <ul>
+                                <li><strong>Real-time WPM tracking</strong> with accuracy metrics</li>
+                                <li><strong>Dynamic word generation</strong> from word pools</li>
+                                <li><strong>Progressive difficulty</strong> that increases over time</li>
+                                <li><strong>Visual feedback</strong> for correct/incorrect keystrokes</li>
+                                <li><strong>High score system</strong> with local persistence</li>
+                                <li><strong>Smooth animations</strong> for falling words</li>
+                            </ul>
+                            <div class="expanded-media">
+                                <div class="media-item">
+                                    <img src="images/projects/typing-game.gif" alt="Typing Game Gameplay">
+                                    <p class="media-caption">Gameplay Demo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">03</span> Experience</h3>
+            </div>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item fade-up stagger-1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 - Dec 2024</div>
+                        <h4>Retail Operations & IT Support</h4>
+                        <h5>China Mall, Pinetown</h5>
+                        <p>Provided customer service, managed POS transactions, and maintained product inventory in a high-volume retail setting. Supervised daily tasks for store employees, contributing to an organized workflow. Installed, configured, and troubleshot CCTV security systems and network cabling to ensure operational uptime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">04</span> Education</h3>
+            </div>
+            <div class="education-grid">
+                <!-- Education Item 1 -->
+                <div class="education-card fade-up stagger-1">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-content">
+                        <h4>Bachelor of Science in Computer Science and Information Technology</h4>
+                        <h5>University of Kwazulu-Natal</h5>
+                        <span class="edu-year">2023-2025</span>
+                        <p>Relevant Coursework: Data Structures, Algorithms, Web Development, AI.</p>
+                    </div>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="education-card fade-up stagger-2">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-content">
+                        <h4>National Senior Certificate (NSC)</h4>
+                        <h5>Hillcrest High School, Pinetown</h5>
+                        <span class="edu-year">2022</span>
+                        <p>IT PAT Exemplar: Developed a school registration and teacher marking system; project selected as an exemplary model for the Pinetown District (NSC 2022) for excellence in system design.</p>
+                    </div>
+                </div>
+                <!-- Certifications -->
+                <div class="education-card fade-up stagger-3">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="edu-content">
+                        <h4>Certifications</h4>
+                        <h5>Online Platforms</h5>
+                        <span class="edu-year">2020 - Present</span>
+                        <p>
+                            â€¢ Front End Development (freeCodeCamp)<br>
+                            â€¢ JavaScript Algorithms & Data Structures (freeCodeCamp)<br>
+                            â€¢ Responsive Web Design (freeCodeCamp)<br>
+                            â€¢ JavaScript (Codecademy)<br>
+                            â€¢ Python 3 (Codecademy)<br>
+                            â€¢ SQL (Codecademy)<br>
+                            â€¢ Git & GitHub (Codecademy)<br>
+                            â€¢ Introduction to Cybersecurity (Cisco Networking Academy)<br>
+                            â€¢ Docker Essentials (Cognitive Class - IBM)<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leadership" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">05</span> Leadership & Extracurriculars</h3>
+            </div>
+            <div class="education-grid">
+                <article class="education-card fade-up stagger-1">
+                    <div class="edu-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="edu-content">
+                        <h4>Badminton Team Captain (B Team)</h4>
+                        <h5>Hillcrest High School</h5>
+                        <span class="edu-year">2022</span>
+                        <p>Led team to 1st place in the inter-school B Team league.</p>
+                    </div>
+                </article>
+                <article class="education-card fade-up stagger-2">
+                    <div class="edu-icon"><i class="fas fa-chess-knight"></i></div>
+                    <div class="edu-content">
+                        <h4>Chess Team Member</h4>
+                        <h5>Hillcrest High School</h5>
+                        <span class="edu-year">2022</span>
+                        <p>Key contributor to the 1st place winning team in the inter-school chess tournament; ranked top 3 in school.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">06</span> Technical Skills</h3>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category fade-up stagger-1">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>C#</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Delphi</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up stagger-2">
+                    <h4>Web & Full Stack</h4>
+                    <div class="skill-tags">
+                        <span>HTML/CSS</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up stagger-3">
+                    <h4>Game Development & Graphics</h4>
+                    <div class="skill-tags">
+                        <span>Unity</span>
+                        <span>SFML</span>
+                        <span>HLSL/GLSL Shaders</span>
+                        <span>Blender</span>
+                        <span>Procedural Generation</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up stagger-4">
+                    <h4>Databases</h4>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Firebase</span>
+                        <span>DynamoDB</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up stagger-6">
+                    <h4>AI & Data</h4>
+                    <div class="skill-tags">
+                        <span>LLM APIs</span>
+                        <span>Multi-Agent Pipelines</span>
+                        <span>Predictive AI Algorithms</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up">
+                    <h4>Code Quality & Tools</h4>
+                    <div class="skill-tags">
+                        <span>Ruff</span>
+                        <span>Mypy</span>
+                        <span>Static Analysis</span>
+                        <span>Agile (Familiarity)</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up">
+                    <h4>IT, Networking & IoT</h4>
+                    <div class="skill-tags">
+                        <span>Electrical Wiring & DB Boards</span>
+                        <span>Networking Fundamentals</span>
+                        <span>IoT (Victron/Sonoff)</span>
+                        <span>Node-RED Automation</span>
+                        <span>CCTV Installation</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up">
+                    <h4>Other</h4>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>Typing (110+ WPM)</span>
+                        <span>Problem Solving</span>
+                        <span>Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header fade-up">
+                <h3><span class="number">07</span> What's Next?</h3>
+            </div>
+            <div class="contact-content fade-up stagger-1">
+                <h2>Get In Touch</h2>
+                <p>I am currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out.</p>
+                <div class="contact-details">
+                    <a href="mailto:jobtyko@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jobtyko@gmail.com</span>
+                    </a>
+                    <a href="tel:+27784587585" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 78 458 7585</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/job-ko-19078b351/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/jobbie007" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built with <span class="heart"><i class="fas fa-heart"></i></span> by Job Ko</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
