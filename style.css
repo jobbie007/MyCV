@@ -1434,6 +1434,18 @@ footer .heart {
     transform: scale(1.02);
 }
 
+/* Large GIF display for Boss Fight */
+.expanded-media.large-gif {
+    display: block;
+    text-align: center;
+}
+
+.expanded-media.large-gif img {
+    max-height: 500px;
+    max-width: 100%;
+    width: auto;
+}
+
 .expanded-media .media-item {
     position: relative;
     display: flex;
