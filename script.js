@@ -288,4 +288,37 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollIndicator?.style.setProperty('opacity', '1');
         }
     });
+
+    // --- Lightbox for expanded images ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox?.querySelector('.lightbox-image');
+    const lightboxClose = lightbox?.querySelector('.lightbox-close');
+
+    // Add click handlers to all images in expanded-media sections
+    document.querySelectorAll('.expanded-media img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (lightbox && lightboxImg) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Close lightbox
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+    function closeLightbox() {
+        lightbox?.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 });
